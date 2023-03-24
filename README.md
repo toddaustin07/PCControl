@@ -42,9 +42,16 @@ The driver can also monitor the on/off state of the PC by enabling this option i
 #### Device Configuration
 * Open the device to its Controls screen and then select the 3-vertical-dot menu in the upper right corner then select **Settings**.  
 * Configure the following items:
-  * WOL MAC Address - this is the mac address of your PC in the form xx:xx:xx:xx:xx:xx
-  * WOL Broadcast Address - this should normally not be changed unless WOL commands don't seem to be working; you can try port 9 instead of 7
-  * RSM IP Address:PORT - this is the IP address of your PC and the port number you configured in the Remote Shutdown Manager settings window
-  * RSM Secret - this is the secret code you optionally configured in the Remote Shutdown Manager settings window
-  * Monitor Enable - Turn this on to enable ongoing monitoring of your PC to keep the switch state synched
-  * Monitor Frequency - Choose the frequency of 'pings' that will be sent to your PC to keep the switch state synched
+  * **WOL MAC Address** - this is the mac address of your PC in the form xx:xx:xx:xx:xx:xx
+  * **WOL Broadcast Address** - this should normally not be changed unless WOL commands don't seem to be working; you can try port 9 instead of 7
+  * **RSM IP Address:Port** - this is the IP address of your PC and the port number you configured in the Remote Shutdown Manager settings window
+  * **RSM Secre**t - this is the secret code you optionally configured in the Remote Shutdown Manager settings window
+  * **Monitor Enable** - Turn this on to enable ongoing monitoring of your PC to keep the switch state synched
+  * **Monitor Frequency** - Choose the frequency of 'pings' that will be sent to your PC to keep the switch state synched
+
+## Usage
+### Device Controls screen
+Elements:
+* Switch - turning on and off will execute a WOL command or shutdown command respectively.  If monitoring of the PC is not enabled, and the switch is out of synch with the PC, then when the switch is turned on and the PC is already on or when the switch is turned off and the PC is already off, then the switch will revert to the current state of the PC.  
+* Configure switch 'off' action button - this defines the command that will be sent when the switch (above) is turned off.  Note that selecting the action with this button will not actually execute the command; it is only for configuring the off button action.
+* Create New Device button - use this to create additional PC Control devices if you have other PCs you want to control
