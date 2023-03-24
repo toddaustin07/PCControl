@@ -1,0 +1,5 @@
+name: 'PC Control V1'
+packageKey: 'pccontrolv1'
+permissions:
+    lan: {}
+    discovery: {}

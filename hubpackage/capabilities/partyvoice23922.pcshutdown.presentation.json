@@ -1,0 +1,194 @@
+{
+    "dashboard": {
+        "states": [],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "{{i18n.label}}",
+            "displayType": "list",
+            "list": {
+                "command": {
+                    "name": "setShutdownType",
+                    "alternatives": [
+                        {
+                            "key": "hibernate",
+                            "value": "Hibernate",
+                            "type": "active"
+                        },
+                        {
+                            "key": "shutdown",
+                            "value": "Shutdown",
+                            "type": "active"
+                        },
+                        {
+                            "key": "suspend",
+                            "value": "Suspend",
+                            "type": "active"
+                        },
+                        {
+                            "key": "turnscreenoff",
+                            "value": "Turn screen off",
+                            "type": "active"
+                        },
+                        {
+                            "key": "lock",
+                            "value": "Lock",
+                            "type": "active"
+                        },
+                        {
+                            "key": "restart",
+                            "value": "Restart",
+                            "type": "active"
+                        },
+                        {
+                            "key": "forceshutdown",
+                            "value": "Force shutdown",
+                            "type": "active"
+                        }
+                    ],
+                    "argumentType": "string"
+                },
+                "state": {
+                    "value": "shutdowntype.value",
+                    "valueType": "string",
+                    "alternatives": [
+                        {
+                            "key": "hibernate",
+                            "value": "Hibernate",
+                            "type": "active"
+                        },
+                        {
+                            "key": "shutdown",
+                            "value": "Shutdown",
+                            "type": "active"
+                        },
+                        {
+                            "key": "suspend",
+                            "value": "Suspend",
+                            "type": "active"
+                        },
+                        {
+                            "key": "turnscreenoff",
+                            "value": "Turn screen off",
+                            "type": "active"
+                        },
+                        {
+                            "key": "lock",
+                            "value": "Lock",
+                            "type": "active"
+                        },
+                        {
+                            "key": "restart",
+                            "value": "Restart",
+                            "type": "active"
+                        },
+                        {
+                            "key": "forceshutdown",
+                            "value": "Force shutdown",
+                            "type": "active"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "Shutdown Type",
+                "displayType": "list",
+                "list": {
+                    "alternatives": [
+                        {
+                            "key": "hibernate",
+                            "value": "Hibernate",
+                            "type": "active"
+                        },
+                        {
+                            "key": "shutdown",
+                            "value": "Shutdown",
+                            "type": "active"
+                        },
+                        {
+                            "key": "suspend",
+                            "value": "Suspend",
+                            "type": "active"
+                        },
+                        {
+                            "key": "turnscreenoff",
+                            "value": "Turn screen off",
+                            "type": "active"
+                        },
+                        {
+                            "key": "lock",
+                            "value": "Lock",
+                            "type": "active"
+                        },
+                        {
+                            "key": "restart",
+                            "value": "Restart",
+                            "type": "active"
+                        },
+                        {
+                            "key": "forceshutdown",
+                            "value": "Force shutdown",
+                            "type": "active"
+                        }
+                    ],
+                    "value": "shutdowntype.value",
+                    "valueType": "string"
+                }
+            }
+        ],
+        "actions": [
+            {
+                "label": "Set Shutdown Type",
+                "displayType": "list",
+                "list": {
+                    "alternatives": [
+                        {
+                            "key": "hibernate",
+                            "value": "Hibernate",
+                            "type": "active"
+                        },
+                        {
+                            "key": "shutdown",
+                            "value": "Shutdown",
+                            "type": "active"
+                        },
+                        {
+                            "key": "suspend",
+                            "value": "Suspend",
+                            "type": "active"
+                        },
+                        {
+                            "key": "turnscreenoff",
+                            "value": "Turn screen off",
+                            "type": "active"
+                        },
+                        {
+                            "key": "lock",
+                            "value": "Lock",
+                            "type": "active"
+                        },
+                        {
+                            "key": "restart",
+                            "value": "Restart",
+                            "type": "active"
+                        },
+                        {
+                            "key": "forceshutdown",
+                            "value": "Force shutdown",
+                            "type": "active"
+                        }
+                    ],
+                    "command": "setShutdownType",
+                    "argumentType": "string"
+                }
+            }
+        ]
+    },
+    "id": "partyvoice23922.pcshutdown",
+    "version": 1
+}

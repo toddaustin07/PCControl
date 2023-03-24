@@ -1,0 +1,27 @@
+id: partyvoice23922.pcshutdown
+version: 1
+status: proposed
+name: pcshutdown
+ephemeral: false
+attributes:
+  shutdowntype:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 20
+      additionalProperties: false
+      required:
+        - value
+    setter: setShutdownType
+    enumCommands: []
+commands:
+  setShutdownType:
+    name: setShutdownType
+    arguments:
+      - name: shutdowntype
+        optional: false
+        schema:
+          type: string
+          maxLength: 20

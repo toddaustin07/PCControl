@@ -1,0 +1,70 @@
+name: pccontrol.v1
+components:
+  - id: main
+    capabilities:
+      - id: switch
+        version: 1
+      - id: "partyvoice23922.pcshutdown"
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: Switch
+  - id: Utility
+    capabilities:
+      - id: "partyvoice23922.createanother"
+        version: 1
+preferences:
+  - title: "WOL MAC Address"
+    name: macaddr
+    description: "Device MAC Address"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 17
+      maxLength: 17
+      default: "xx:xx:xx:xx:xx:xx"
+  - title: "WOL Broadcast Address"
+    name: bcastaddr
+    description: "IP:port Address"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 11
+      maxLength: 17
+      default: "255.255.255.255:7"
+  - title: "RSM IP Address:Port"
+    name: pcaddr
+    description: "IP:Port Address"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      minLength: 11
+      maxLength: 21
+      default: "192.168.n.nnn:5001"
+  - title: "RSM Secret"
+    name: secret
+    description: "Enter text"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+  - title: "Monitor Enable"
+    name: monitor
+    description: "Enable/Disable"
+    required: true
+    preferenceType: boolean
+    definition:
+      default: false
+  - title: "Monitor Frequency"
+    name: monfreq
+    description: "Number of seconds"
+    required: false
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 86400
+      default: 60
