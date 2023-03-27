@@ -20,7 +20,8 @@ The SmartThings device created by this driver will have a simple switch with whi
 * lock
 * restart
 * force shutdown
-The type of shutdown command send when the switch is turned off is configured on the device Controls screen.
+
+The type of shutdown command sent when the switch is turned off is configured on the device Controls screen.
 
 The **Remote Shutdown manager** application runs in the background of the PC and is accessible through the system tray.  It responds to HTTP requests to execute the desired shutdown command, and can also be configured to require a secret key be included with all requests.  For more information, see the Github page link provided above.
 
