@@ -54,5 +54,5 @@ The driver can also monitor the on/off state of the PC by enabling this option i
 ### Device Controls screen
 Elements:
 * Switch - turning on and off will execute a WOL command or shutdown command respectively.  If monitoring of the PC is not enabled, and the switch is out of synch with the PC, then when the switch is turned on and the PC is already on or when the switch is turned off and the PC is already off, then the switch will revert to the current state of the PC.  
-* Configure switch 'off' action button - this defines the command that will be sent when the switch (above) is turned off.  Note that selecting the action with this button will not actually execute the command; it is only for configuring the off button action.
+* Configure switch 'off' action button - this defines the command that will be sent when the switch (above) is turned off.  Note that selecting the action with this button will not immediately execute the action; it is only for configuring the command sent to the PC when the switch (above) is turned off.
 * Create New Device button - use this to create additional PC Control devices if you have other PCs you want to control
